@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <title>Figuras Geometricas</title>
     <link href="./figuras.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <header>
@@ -16,8 +17,102 @@
      <img class="img-header" src="./icons/shapes.png"> 
      <h1>Figuras Geometricas</h1>
     </div>
+    <div>
     <p>Este es un taller practico de Figuras Geometricas</p>
+    </div>
     </header>
+    <section class="firstcalculator">
+        <div class="square">
+            <div class="squareTitle">
+            <img src="./icons/menu.png">
+            <h1>Cuadrado</h1>
+            </div>
+            <div class="input">
+            <label for="inputSquare">
+                Escribe cuanto mide cada lado del cuadrado: 
+            </label>
+            <input id="inputSquare" type="number" /> 
+            </div>
+            <div class="buttons">
+            <button type="button" class="button-cal" onclick="calPerimetreSquare()">
+             Calcular el Perimetro
+            </button>
+            <button type="button" class="button-cal" onclick="calAreaSquare()">
+            Calcular el Area
+            </button>
+        </div>
+        </div>
+        <div class="triangle">
+                <div class="triangleTitle">
+                <img src="./icons/right.png">
+                <h1>Triangulo</h1>
+                </div>
+            <div class="input">
+                <div class="pruebe">
+                <label for="inputTriangle">
+                    Lado A: 
+                </label>
+                <input id="inputTriangle" type="number"/> 
+             </div>
+
+            <div class="pruebe">
+                <label for="inputTriangleB">
+                    Lado B: 
+                </label>
+                <input id="inputTriangleB" type="number"/>
+            </div>
+
+            <div class="pruebe">
+                <label for="inputTriangleC">
+                    Base:
+                </label>
+                <input id="inputTriangleC" type="number"/>
+                </div>
+
+                <div class="pruebe">
+                <label for="inputTriangleH">
+                    Altura:
+                </label>
+                <input id="inputTriangleH" type="number"/>
+               </div>
+
+            </div>
+                <div class="buttons">
+
+                <button type="button" class="button-cal" onclick="calPerimeterTriangle()">
+                 Calcular el Perimetro
+                </button>
+                <button type="button" class="button-cal" onclick="calAreaTriangle()">
+                Calcular el Area
+                </button>
+            </div>
+
+        </div>
+        <div class="circle">
+                <div class="circleTitle">
+                <img src="./icons/circle.png">
+                <h1>Circulo</h1>
+                </div>
+                <div class="input">
+                <label for="inputCircle">
+                    Ingrese el radio del circulo: 
+                </label>
+                <input id="inputCircle" type="number"/> 
+                </div>
+                <div class="buttons">
+                <button type="button" class="button-cal" onclick="calPerimeterCircle()">
+                 Calcular el Perimetro
+                </button>
+                <button type="button" class="button-cal" onclick="calDiameterCircle()">
+                Calcular el Diametro
+                </button>
+                <button type="button" class="button-cal" onclick="calAreaCircle()">
+                    Calcular el Area
+                    </button>
+            </div>
+
+        </div>
+    </section>
 
     <script src="./figuras.js"></script>
 </body>
